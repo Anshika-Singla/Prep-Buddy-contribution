@@ -1,0 +1,36 @@
+<svg viewBox="0 0 256 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main head background -->
+  <ellipse cx="128" cy="130" rx="95" ry="100" fill="#3b52df"/>
+  
+  <!-- Left ear antenna -->
+  <rect x="40" y="60" width="16" height="60" rx="8" fill="#3b52df"/>
+  <rect x="44" y="50" width="8" height="20" rx="4" fill="#3b52df"/>
+  
+  <!-- Right ear antenna -->
+  <rect x="200" y="60" width="16" height="60" rx="8" fill="#3b52df"/>
+  <rect x="204" y="50" width="8" height="20" rx="4" fill="#3b52df"/>
+  
+  <!-- Left ear cup -->
+  <path d="M 45 90 Q 20 100 30 130 Q 35 140 50 135" fill="#3b52df"/>
+  
+  <!-- Right ear cup -->
+  <path d="M 211 90 Q 236 100 226 130 Q 221 140 206 135" fill="#3b52df"/>
+  
+  <!-- Face white background -->
+  <rect x="60" y="70" width="132" height="110" rx="20" fill="#ffffff"/>
+  
+  <!-- Left eye (closed happy) -->
+  <path d="M 80 110 Q 90 125 100 110" stroke="#3b52df" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right eye (closed happy) -->
+  <path d="M 156 110 Q 166 125 176 110" stroke="#3b52df" stroke-width="10" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mouth (smile) -->
+  <path d="M 100 145 Q 128 160 156 145" stroke="#3b52df" stroke-width="9" fill="none" stroke-linecap="round"/>
+  
+  <!-- Speech bubble bottom pointer -->
+  <path d="M 100 180 L 75 220 L 110 185 Z" fill="#3b52df"/>
+  
+  <!-- Speech bubble curve (lower part) -->
+  <path d="M 70 180 Q 50 190 60 230" stroke="#3b52df" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>

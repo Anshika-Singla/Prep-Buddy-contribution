@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 8C28 8 24 12 24 16C24 20 28 24 32 24C36 24 40 20 40 16C40 12 36 8 32 8Z" fill="currentColor"/>
+<path d="M24 20C20 20 16 24 16 28C16 32 20 36 24 36C28 36 32 32 32 28C32 24 28 20 24 20Z" fill="currentColor" opacity="0.7"/>
+<path d="M40 20C36 20 32 24 32 28C32 32 36 36 40 36C44 36 48 32 48 28C48 24 44 20 40 20Z" fill="currentColor" opacity="0.7"/>
+<path d="M32 32C28 32 24 36 24 40C24 44 28 48 32 48C36 48 40 44 40 40C40 36 36 32 32 32Z" fill="currentColor"/>
+</svg>
