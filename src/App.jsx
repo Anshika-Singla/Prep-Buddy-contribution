@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
@@ -8,6 +7,7 @@ import DSA from './pages/DSA';
 import Core from './pages/Core';
 import Aptitude from './pages/Aptitude';
 import Jobs from './pages/Jobs';
+import ResumeAnalyzer from './pages/ResumeAnalyzer';
 import Chat from './pages/Chat';
 import Navbar from './components/Navbar';
 import { ProfileProvider } from './context/ProfileContext';
@@ -35,7 +35,7 @@ const AppContent = ({ authState, onAuthSuccess, onLogout }) => {
       {authState.user && !isAuthPage ? <Navbar user={authState.user} onLogout={onLogout} /> : null}
       <main className={authState.user && !isAuthPage ? 'pt-16' : ''}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/login" element={<Login onAuthSuccess={onAuthSuccess} />} />
           <Route path="/signup" element={<Signup onAuthSuccess={onAuthSuccess} />} />
           <Route
@@ -75,6 +75,22 @@ const AppContent = ({ authState, onAuthSuccess, onLogout }) => {
             element={
               <ProtectedRoute isReady={authState.isReady} isLoggedIn={Boolean(authState.user)}>
                 <Jobs />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resume-analyzer"
+            element={
+              <ProtectedRoute isReady={authState.isReady} isLoggedIn={Boolean(authState.user)}>
+                <ResumeAnalyzer />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resume-analyzer/results"
+            element={
+              <ProtectedRoute isReady={authState.isReady} isLoggedIn={Boolean(authState.user)}>
+                <ResumeAnalyzer />
               </ProtectedRoute>
             }
           />

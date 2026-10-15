@@ -47,6 +47,7 @@ const Navbar = ({ user, onLogout }) => {
               { to: '/core', label: 'Core' },
               { to: '/aptitude', label: 'Aptitude' },
               { to: '/jobs', label: 'Jobs' },
+              { to: '/resume-analyzer', label: 'Resume' },
               { to: '/chat', label: 'Chat' },
             ].map((item) => (
               <motion.div key={item.to} whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.95 }}>
